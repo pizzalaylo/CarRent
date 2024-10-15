@@ -43,7 +43,7 @@ export function App() {
 
   useEffect(
     () => async () => {
-      await axios.get("http://localhost:8080/cars").then(
+      await axios.get("car-rent-backend-beta.vercel.app/cars").then(
         (res) => {
           setCars(res.data);
         },
